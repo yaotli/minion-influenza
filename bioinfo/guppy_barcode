@@ -1,0 +1,4 @@
+#!bin/bash
+
+~/ont-guppy-cpu/bin/guppy_barcoder -i ./fastq/pass -s test --barcode_kits EXP-NBD104 --min_score 70 
+

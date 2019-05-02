@@ -2,18 +2,18 @@
 
 This is a collection of literature relevent to [minION](http://nanoporetech.com/products/minion) sequencing, with a particular focus on viral genes. 
 
-## Sumary 
+## Summary 
 
 * __basecalling__: Guppy, Albacore
-* __demultiplexing__: Guppy, [Porechop](https://github.com/rrwick/Porechop),
+* __demultiplexing__: Guppy, [Porechop](https://github.com/rrwick/Porechop)
 * __read trim__: [Seqtk](https://github.com/lh3/seqtk), Porechop
 * __map/align__: [Minimap2](https://github.com/lh3/minimap2), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml) (BWA-MEM), [GraphMap](https://github.com/isovic/graphmap), Blastn, [DIAMOND](https://github.com/bbuchfink/diamond), [Bowtie2](https://github.com/BenLangmead/bowtie2)
-* __consensus calling__: [zika-pipeline](https://github.com/zibraproject/zika-pipeline) (margin_cons.py), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml)?,
+* __consensus calling__: [zika-pipeline](https://github.com/zibraproject/zika-pipeline) (margin_cons.py), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml)?
 * __de novo assemble__: [Canu](https://github.com/marbl/canu), [Spades](http://cab.spbu.ru/software/spades/)
-* __variant calling__: [Nanopolish](https://github.com/jts/nanopolish), 
+* __variant calling__: [Nanopolish](https://github.com/jts/nanopolish)
 * __qc__: nanoplot/[nanopack](https://github.com/wdecoster/nanopack), [minion_qc](https://github.com/roblanf/minion_qc), Seqtk, [Qualimap](http://qualimap.bioinfo.cipf.es)
 * __polish__: [Nanopolish](https://github.com/jts/nanopolish), [Racon](https://github.com/isovic/racon)
-* __general data handling__: [Samtools](https://github.com/samtools/samtools), [BEDtools](https://github.com/arq5x/bedtools2), [Rsamtools](http://bioconductor.org/packages/release/bioc/html/Rsamtools.html), [Bamstats](https://github.com/guigolab/bamstats), 
+* __general data handling__: [Samtools](https://github.com/samtools/samtools), [BEDtools](https://github.com/arq5x/bedtools2), [Rsamtools](http://bioconductor.org/packages/release/bioc/html/Rsamtools.html), [Bamstats](https://github.com/guigolab/bamstats)
 * __Others__: [Centrifuge](https://github.com/infphilo/centrifuge) (taxonomic classification), [Kraken](https://ccb.jhu.edu/software/kraken/) (taxonomic)
 
 

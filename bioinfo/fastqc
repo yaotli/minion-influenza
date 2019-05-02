@@ -1,0 +1,3 @@
+#!bin/bash
+
+~/FastQC/fastqc *.fastq -o ../qc

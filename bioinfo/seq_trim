@@ -1,0 +1,5 @@
+#!bin/bash
+
+for f in $(ls *.fastq);
+do ~/seqtk/seqtk trimfq -b 1 -e 1 $f > ${f/.fastq/_trim.fastq};
+done 
