@@ -11,22 +11,31 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 * __consensus calling__: [zika-pipeline](https://github.com/zibraproject/zika-pipeline) (margin_cons.py), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml)?
 * __de novo assemble__: [Canu](https://github.com/marbl/canu), [Spades](http://cab.spbu.ru/software/spades/)
 * __variant calling__: [Nanopolish](https://github.com/jts/nanopolish)
-* __qc__: nanoplot/[nanopack](https://github.com/wdecoster/nanopack), [minion_qc](https://github.com/roblanf/minion_qc), Seqtk, [Qualimap](http://qualimap.bioinfo.cipf.es)
+* __qc__: [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), nanoplot/[nanopack](https://github.com/wdecoster/nanopack), [minion_qc](https://github.com/roblanf/minion_qc), Seqtk, [Qualimap](http://qualimap.bioinfo.cipf.es)
 * __polish__: [Nanopolish](https://github.com/jts/nanopolish), [Racon](https://github.com/isovic/racon)
 * __general data handling__: [Samtools](https://github.com/samtools/samtools), [BEDtools](https://github.com/arq5x/bedtools2), [Rsamtools](http://bioconductor.org/packages/release/bioc/html/Rsamtools.html), [Bamstats](https://github.com/guigolab/bamstats)
 * __Others__: [Centrifuge](https://github.com/infphilo/centrifuge) (taxonomic classification), [Kraken](https://ccb.jhu.edu/software/kraken/) (taxonomic)
 
+## Other topics
 
-### Reference 
+* Basecalling tools: [Performance of neural network basecalling tools for Oxford Nanopore sequencing](https://github.com/rrwick/Basecalling-comparison) 
+* [_How to generate consensus sequences using nanopolish_](http://lab.loman.net/2018/12/21/how-to-generate-consensus-sequences-on-nanopore/) by Nicholas Loman
+
+## Well-established Pipelines 
+
+* ZiBRA Project [[link](https://github.com/zibraproject/zika-pipeline/blob/master/docs/index.md)]
+* ARTIC Project [[link](http://artic.network/ebov/ebov-bioinformatics-sop.html)]
+
+
+### Other reference 
 
 <hr>
 
-1. __ZiBRA Project__ [[link](https://github.com/zibraproject/zika-pipeline/blob/master/docs/index.md)]
-4. ARTIC Project [[link](http://artic.network/ebov/ebov-bioinformatics-sop.html)]
-5. [_How to generate consensus sequences using nanopolish_](http://lab.loman.net/2018/12/21/how-to-generate-consensus-sequences-on-nanopore/) by Nicholas Loman
+
+
 1. Badial et al., Plant Disease, 2018 [[link](https://apsjournals.apsnet.org/doi/abs/10.1094/PDIS-04-17-0488-RE)]
     - fasta extraction: [poRe](https://github.com/mw55309/poRe_docs)
-14. Boldogkői et al., Sci. Data., 2018 [[link](https://www.nature.com/articles/sdata2018276)]
+2. Boldogkői et al., Sci. Data., 2018 [[link](https://www.nature.com/articles/sdata2018276)]
     - align: GMAP ( r counterpart: gmapR )
 12. Ima et al., frontiers in Microb., 2018 [[link](https://www.frontiersin.org/articles/10.3389/fmicb.2018.02748/full)]
     - SNV call: Samtools ( via mpileup )
@@ -49,7 +58,8 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 6. Wongsurawat et al., frontiers in Microb, 2019 [[link](https://www.frontiersin.org/articles/10.3389/fmicb.2019.00260/full#h5)]
 11. __Grubaugh et al., Genome Biology, 2019__ [[link](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1618-7)]
 14. Naito et al., Arch. of Virology, 2019 [[link](https://link.springer.com/article/10.1007%2Fs00705-019-04254-5)]
-16. Warwick-Dugdale et al., PeerJ, 2019 [[link](https://peerj.com/articles/6800/)]
+16. Warwick-Dugdale et al., PeerJ, 2019 [[link](https://peerj.com/articles/6800/)] 
+    - align: [MUmmer](https://github.com/mummer4/mummer/blob/master/MANUAL.md)
 
 
 

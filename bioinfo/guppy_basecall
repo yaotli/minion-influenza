@@ -1,3 +1,4 @@
 #!bin/bash 
+# v3.03
 
 ~/ont-guppy-cpu/bin/guppy_basecaller -i ./fast5 -s ./test --flowcell FLO-MIN106 --kit SQK-LSK109 -q 0 --qscore_filtering 7

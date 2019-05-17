@@ -1,0 +1,4 @@
+#!bin/bash
+
+~/minimap2-2.16/minimap2 -ax map-ont map/ref_PR8_MH785011.fasta ./trim/BC01_trim.fastq > ./map/BC01.sam
+
