@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
-~/Porechop/porechop-runner.py -i ../fastq/pass -b . --require_two_barcodes
+~/Porechop/porechop-runner.py -i ../fastq/pass -b . --require_two_barcodes > report.txt
 

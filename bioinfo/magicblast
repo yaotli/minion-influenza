@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+for f in $(ls *.fastq);
+do ~/ncbi-magicblast-1.4.0/bin/magicblast -query $f -db ~/ncbi-blast-2.9.0/db/flu -infmt fastq -outfmt tabular -out ${f/.fastq/.txt};
+
+done

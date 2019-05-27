@@ -1,0 +1,14 @@
+#!bin/bash
+set -e
+
+ref=$1
+sample=$2
+
+
+~/samtools-1.9/bin/samtools faidx $ref 
+
+~/samtools-1.9/bin/samtools view -bS $sample.sam | ~/samtools-1.9/bin/samtools sort -o $sample.bam 
+
+~/samtools-1.9/bin/samtools index -b $sample.bam $sample.bai
+
+

@@ -14,7 +14,7 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 * __qc__: [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), nanoplot/[nanopack](https://github.com/wdecoster/nanopack), [minion_qc](https://github.com/roblanf/minion_qc), Seqtk, [Qualimap](http://qualimap.bioinfo.cipf.es)
 * __polish__: [Nanopolish](https://github.com/jts/nanopolish), [Racon](https://github.com/isovic/racon)
 * __general data handling__: [Samtools](https://github.com/samtools/samtools), [BEDtools](https://github.com/arq5x/bedtools2), [Rsamtools](http://bioconductor.org/packages/release/bioc/html/Rsamtools.html), [Bamstats](https://github.com/guigolab/bamstats)
-* __Others__: [Centrifuge](https://github.com/infphilo/centrifuge) (taxonomic classification), [Kraken](https://ccb.jhu.edu/software/kraken/) (taxonomic)
+* __others__: [Centrifuge](https://github.com/infphilo/centrifuge) (taxonomic classification), [Kraken](https://ccb.jhu.edu/software/kraken/) (taxonomic)
 
 ## Other topics
 

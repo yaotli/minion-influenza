@@ -1,0 +1,10 @@
+#!/bin/bash 
+# cd in lib folder
+# ex. sh BC0/BC0_trim.fastq
+
+LIBDIR=$(pwd)
+samplefastq=$1
+
+docker run  -v $LIBDIR:/trans miniflu nanopolish index -d trans/fast5 -s trans/fastq/sequencing_summary.txt trans/$samplefastq 
+
+docker rm $(docker ps -a -q)

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+~/Porechop/porechop-runner.py -i ../fastq/pass -b . --barcode_threshold 80 > report.txt
+

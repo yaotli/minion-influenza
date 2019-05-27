@@ -1,0 +1,16 @@
+#!/bin/bash
+# cd in LIB dir.
+# ex. sh script B0/ref.fa B0
+
+LIBDIR=$(pwd)
+ref=$1
+sample=$2
+
+for i in {1..8}
+
+do	
+  gene=$(grep '>' $LIBDIR/$ref | sed "$i!d" | sed 's/>//')
+
+  docker run  -v $LIBDIR:/trans miniflu nanopolish variants --ploidy 1 --snps -r /trans/$sample/$sample'_trim.fastq' -b /trans/$sample/$sample.bam -g /trans/$ref -o /trans/$sample/$sample-$gene.vcf -w "$gene:1-10000"
+
+done

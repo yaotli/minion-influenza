@@ -1,6 +1,7 @@
 # This is a R script depending on package: rjson, stringr
 # Run the script in command line: 
 # Rscript blasn.R folder_with_json_files
+# folder_with_json_files derive from NCBI online Blastn -- download multiple json file
 
 require(rjson)
 require(stringr)

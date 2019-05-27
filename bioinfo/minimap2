@@ -1,4 +1,8 @@
-#!bin/bash
+#!/bin/bash
+set -e
 
-~/minimap2-2.16/minimap2 -ax map-ont map/ref_PR8_MH785011.fasta ./trim/BC01_trim.fastq > ./map/BC01.sam
+ref=$1
+fastq=$2
+
+~/minimap2-2.16/minimap2 -ax map-ont $1 $2 > ${2/.fastq/.sam}; 
 

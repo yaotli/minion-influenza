@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+sample=$1
+
+echo 'no. of mapped reads / no. total reads (post demulti.)' >> general_report.txt
+
+echo $(~/samtools-1.9/samtools view -F 0x04 $1.sam | cut -f1 | sort | uniq | wc -l) / $(~/samtools-1.9/samtools view $1.sam | cut -f1 | sort | uniq | wc -l) >> general_report.txt

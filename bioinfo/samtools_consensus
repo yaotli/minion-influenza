@@ -1,0 +1,14 @@
+#!/bin/bash
+# cd sample_folder
+# ex, sh script ./ref.fa B0
+set -e
+
+ref=$1
+sample=$2
+
+~/samtools-1.9/bin/samtools mpileup -d 100000 -uf $ref $sample.bam | ~/bcftools-1.9/bin/bcftools call -cv -Oz -o $sample.gz
+
+~/htslib-1.9/bin/tabix $sample.gz
+
+~/bcftools-1.9/bin/bcftools consensus -f $ref $sample.gz -i '(type="snp")&((DP4[0]+DP4[1])<(DP4[2]+DP4[3]))' > $sample-raw-con.fasta
+
