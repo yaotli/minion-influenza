@@ -32,11 +32,12 @@ for( i in 1: length( csvfiles ) )
     s1  = str_match( des, "\\w+\\|\\w+\\|\\w+\\|\\w+\\|(.+)" )[,2]
     s2  = gsub( "Influenza A virus ", "", s1 )[1]
     id  = gsub("^\\(|\\)$", "", str_split( s2, "\\)\\)",n = 2)[[1]][1] )
-    seg = str_extract( str_split( s2, " ",n = 2)[[1]][2], "PB2|PB1|PA|HA|NP|NA|M1|M2|NS|NEP")
     
-    seg.1 = str_extract( s1[2], "PB2|PB1|PA|HA|NP|NA|M1|M2|NS|NEP")
-    seg.2 = str_extract( s1[3], "PB2|PB1|PA|HA|NP|NA|M1|M2|NS|NEP")
-    seg.3 = str_extract( s1[4], "PB2|PB1|PA|HA|NP|NA|M1|M2|NS|NEP")
+    seg = as.numeric( str_match( s2, "segment ([0-9])" )[,2] )
+    
+    seg.1 = as.numeric( str_match( s1[2], "segment ([0-9])" )[,2] )
+    seg.2 = as.numeric( str_match( s1[3], "segment ([0-9])" )[,2] )
+    seg.3 = as.numeric( str_match( s1[4], "segment ([0-9])" )[,2] )
     
     if( is.na(seg) )
       { 
@@ -53,6 +54,8 @@ for( i in 1: length( csvfiles ) )
         }
       }
     
+    if( is.numeric(seg) ){ seg = c( "PB2", "PB1", "PA", "HA", "NP", "NA", "M", "NS" )[seg] }
+
     out = c( out, paste(j, lth, seg, id, sep = " | ") )
   }
   

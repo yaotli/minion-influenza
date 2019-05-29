@@ -10,7 +10,11 @@ args = commandArgs( trailingOnly = TRUE )
 if (length(args)==0) { stop( "one folder with Blastn results", call. = FALSE) } 
 
 seqfile = read.fasta(file = args[1])
-seq.lth = sapply( getSequence( seqfile ), length )
+seq.lth = sapply( getSequence( seqfile ), 
+                  function(x)
+                    {
+                      max( which( x != "-" ) )
+                    } )
 seq.id  = attributes( seqfile )$names 
 seq.seg = paste0( seq(1,8), "_", gsub( "^.*_", "", attributes( seqfile )$names ) )
 
