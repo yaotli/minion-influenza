@@ -1,7 +1,9 @@
 #!/bin/bash
+# v2.9.0
 
 for f in $(ls *.contigs.fasta);
 do ~/ncbi-blast-2.9.0/bin/blastn -query $f -db ~/ncbi-blast-2.9.0/db/flu -max_target_seqs 10 -outfmt "10 qseqid length stitle" -out ${f/.contigs.fasta/.csv};
 
 done	
 
+Rscript summ_blastn.R . 

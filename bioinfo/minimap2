@@ -1,4 +1,5 @@
 #!/bin/bash
+# minimap2 v2.16
 set -e
 
 ref=$1

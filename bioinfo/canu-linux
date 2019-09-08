@@ -1,0 +1,7 @@
+#!/bin/bash
+# v1.8
+
+for f in $(ls *.fastq);
+do ~/app/canu-1.8/Linux-amd64/bin/canu -d ${f/.fastq/} -p ${f/.fastq/} -nanopore-raw $f genomeSize=14000 minOverlapLength=200 minReadLength=750 corOutCoverage=100 corMhapSensitivity=high useGrid=false maxMemory=96g;
+
+done

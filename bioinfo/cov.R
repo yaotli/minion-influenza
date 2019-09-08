@@ -7,7 +7,7 @@ require( ggplot2 )
 require( seqinr )
 
 args = commandArgs( trailingOnly = TRUE )
-if (length(args)==0) { stop( "one folder with Blastn results", call. = FALSE) } 
+if( length(args)==0 ){ stop( "one folder with Blastn results", call. = FALSE) } 
 
 seqfile = read.fasta(file = args[1])
 seq.lth = sapply( getSequence( seqfile ), 

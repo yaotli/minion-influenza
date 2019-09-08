@@ -47,20 +47,22 @@ for( f in 1: length(txtfiles) )
   if( length( c(out, out2) ) == 0 ){ next() }
   
   system( paste0( "echo '", p.read.mapped, "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) ) )
+  system( paste0( "echo '", "# ", "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) ) )
+  sp = paste0( "echo '", "# ", "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
   
   if( length(out) != 0 )
   {
   # 1 
-  n.hit.occur = paste0( "# n. of occur. of each hit: ", paste( df$Freq[ match( out, df$Var1 ) ], collapse = "; ") )
+  n.hit.occur = paste0( "# no. of occur. of each hit: ", paste( df$Freq[ match( out, df$Var1 ) ], collapse = "; ") )
   lth.align   = paste0( "# median lth. of each hit: ", paste( df.f$lth[ match( out, df.f$ref ) ], collapse = "; ") )
   
-  title1 =  paste0( "echo '", "# Order by hit lengths, threshold: ", min_hit, "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
+  title1 =  paste0( "echo '", "# --1-- Order by hit lengths, threshold: ", min_hit, "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
   
   st1  = paste0( "grep '>' ~/ncbi-blast-2.9.0/db/influenza.fna | sed '", out, "!d' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
   n1a = paste0( "echo '", n.hit.occur, "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
   n1b = paste0( "echo '", lth.align, "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
   
-  fin1 = c( title1, st1, n1a, n1b )
+  fin1 = c( title1, sp, st1, sp, n1a, n1b, sp, sp )
   for( s in 1: length(fin1) )
   {
     system( fin1[s] )
@@ -70,16 +72,16 @@ for( f in 1: length(txtfiles) )
   if( length(out2) != 0 )
   {
   # 2 
-  n.hit.occur2 = paste0( "# n. of occur. of each hit: ", paste( df$Freq[ match( out2, df$Var1 ) ], collapse = "; ") )
+  n.hit.occur2 = paste0( "# no. of occur. of each hit: ", paste( df$Freq[ match( out2, df$Var1 ) ], collapse = "; ") )
   lth.align2   = paste0( "# median lth. of each hit: ", paste( df.l$lth[ match( out2, df.l$ref ) ], collapse = "; ") )
   
-  title2 =  paste0( "echo '", "# Order by occur. of hit, threshold: ", min_lth, "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
+  title2 =  paste0( "echo '", "# --2-- Order by occur. of hit, threshold: ", min_lth, "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
   
   st2 = paste0( "grep '>' ~/ncbi-blast-2.9.0/db/influenza.fna | sed '", out2, "!d' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
   n2a = paste0( "echo '", n.hit.occur2, "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
   n2b = paste0( "echo '", lth.align2, "' >> ", gsub( ".txt", "_summ.txt", txtfiles[f] ) )
   
-  fin2 = c( title2, st2, n2a, n2b )
+  fin2 = c( title2, sp, st2, sp, n2a, n2b )
   for( s in 1: length(fin2) )
   {
     system( fin2[s] )

@@ -10,4 +10,12 @@ echo 'mean read length' >> general_report.txt
 
 awk '{if(NR%4==2) {count++; bases += length} } END{print bases/count}' *.fastq >> general_report.txt
 
- 
+~/samtools-1.9/samtools view -F 0x04 -bS $1.sam > tem.bam
+
+~/samtools-1.9/samtools fastq -0 tem.fastq tem.bam
+
+echo 'mean read length of mapped reads' >> general_report.txt
+
+awk '{if(NR%4==2) {count++; bases += length} } END{print bases/count}' tem.fastq >> general_report.txt
+
+rm tem.*

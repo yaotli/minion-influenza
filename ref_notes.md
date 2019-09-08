@@ -9,7 +9,7 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 * __read trim__: [Seqtk](https://github.com/lh3/seqtk), Porechop
 * __map/align__: [Minimap2](https://github.com/lh3/minimap2), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml) (BWA-MEM), [GraphMap](https://github.com/isovic/graphmap), Blastn, [DIAMOND](https://github.com/bbuchfink/diamond), [Bowtie2](https://github.com/BenLangmead/bowtie2)
 * __consensus calling__: [zika-pipeline](https://github.com/zibraproject/zika-pipeline) (margin_cons.py), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml)?
-* __de novo assemble__: [Canu](https://github.com/marbl/canu), [Spades](http://cab.spbu.ru/software/spades/)
+* __de novo assemble__: [Canu](https://github.com/marbl/canu), [Spades](http://cab.spbu.ru/software/spades/), [Shasta](https://github.com/chanzuckerberg/shasta)
 * __variant calling__: [Nanopolish](https://github.com/jts/nanopolish)
 * __qc__: [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), nanoplot/[nanopack](https://github.com/wdecoster/nanopack), [minion_qc](https://github.com/roblanf/minion_qc), Seqtk, [Qualimap](http://qualimap.bioinfo.cipf.es)
 * __polish__: [Nanopolish](https://github.com/jts/nanopolish), [Racon](https://github.com/isovic/racon)
@@ -25,6 +25,7 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 
 * ZiBRA Project [[link](https://github.com/zibraproject/zika-pipeline/blob/master/docs/index.md)]
 * ARTIC Project [[link](http://artic.network/ebov/ebov-bioinformatics-sop.html)]
+* [IRMA](https://wonder.cdc.gov/amd/flu/irma/): assembly, variant calling, and phasing of highly variable RNA viruses (CDC)
 
 
 ### Other reference 
@@ -60,7 +61,9 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 14. Naito et al., Arch. of Virology, 2019 [[link](https://link.springer.com/article/10.1007%2Fs00705-019-04254-5)]
 16. Warwick-Dugdale et al., PeerJ, 2019 [[link](https://peerj.com/articles/6800/)] 
     - align: [MUmmer](https://github.com/mummer4/mummer/blob/master/MANUAL.md)
-
-
+17. Krehenwinkel et al., GigaScience, 2019 [[link](https://academic.oup.com/gigascience/article/8/5/giz006/5368330#134713520)]
+    - demultiplex: MiniBar
+    - qc: [Nanofilt](https://github.com/wdecoster/nanofilt)  
+    - error correction(polish): RACON
 
 

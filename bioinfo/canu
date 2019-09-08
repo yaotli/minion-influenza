@@ -1,5 +1,6 @@
 #!/bin/bash
+# v1.8
 
 for f in $(ls *.fastq);
-do ~/canu/Darwin-amd64/bin/canu -d ${f/.fastq/} -p ${f/.fastq/} -nanopore-raw $f genomeSize=15000 minOverlapLength=200 minReadLength=300 corOutCoverage=1000 corMhapSensitivity=high;
+do ~/canu/Darwin-amd64/bin/canu -d ${f/.fastq/} -p ${f/.fastq/} -nanopore-raw $f genomeSize=14000 minOverlapLength=200 minReadLength=750 corOutCoverage=100 corMhapSensitivity=high;
 done 

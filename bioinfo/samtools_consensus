@@ -1,4 +1,5 @@
 #!/bin/bash
+# samtools v1.9
 # cd sample_folder
 # ex, sh script ./ref.fa B0
 set -e

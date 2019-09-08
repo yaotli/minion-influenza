@@ -1,6 +1,7 @@
 #!/bin/bash 
+# nanopolish 0.11.1
 # cd in lib folder
-# ex. sh BC0/BC0_trim.fastq
+# ex, sh BC0/BC0_trim.fastq
 
 LIBDIR=$(pwd)
 samplefastq=$1
