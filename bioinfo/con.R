@@ -18,9 +18,11 @@ if ( length(args) !=3 ) { stop( "needs vcfs & ref & compiled reads", call. = FAL
 
 vcffiles = list.files( args[1], full.names = TRUE )
 
-snps =  do.call( rbind, lapply( as.list( vcffiles ), 
+snps = do.call( rbind, lapply( as.list( vcffiles ), 
                                 function(x) tryCatch( read.table( file = x, 
-                                                                  stringsAsFactors = FALSE ),
+                                                                  stringsAsFactors = FALSE, 
+                                                                  colClasses = "character" ),
+                                                      
                                                       error = function(x) NULL ) ) )
 if( !is.null(snps) )
 {
@@ -33,9 +35,14 @@ if( !is.null(snps) )
                                    return(n)
                                  }) 
                 ) 
-  )
+                )
   
   colnames(snps) = paste0( "v", seq(1, ncol(snps) ) )
+  
+  snps$v2  = as.numeric( snps$v2 )
+  snps$v6  = as.numeric( snps$v6 )
+  snps$v11 = as.numeric( snps$v11 )
+  snps$v15 = as.numeric( snps$v15 )
   
   snps_polish = 
     snps %>% 

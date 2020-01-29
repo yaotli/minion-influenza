@@ -14,7 +14,8 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 * __qc__: [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), nanoplot/[nanopack](https://github.com/wdecoster/nanopack), [minion_qc](https://github.com/roblanf/minion_qc), Seqtk, [Qualimap](http://qualimap.bioinfo.cipf.es)
 * __polish__: [Nanopolish](https://github.com/jts/nanopolish), [Racon](https://github.com/isovic/racon)
 * __general data handling__: [Samtools](https://github.com/samtools/samtools), [BEDtools](https://github.com/arq5x/bedtools2), [Rsamtools](http://bioconductor.org/packages/release/bioc/html/Rsamtools.html), [Bamstats](https://github.com/guigolab/bamstats)
-* __others__: [Centrifuge](https://github.com/infphilo/centrifuge) (taxonomic classification), [Kraken](https://ccb.jhu.edu/software/kraken/) (taxonomic)
+* __others__: [Centrifuge](https://github.com/infphilo/centrifuge) (taxonomic classification), [Kraken](https://ccb.jhu.edu/software/kraken/) (taxonomic), [Kaiju](http://kaiju.binf.ku.dk)
+* __flu__: [VAPOR](https://github.com/connor-lab/vapor)
 
 ## Other topics
 
@@ -65,5 +66,6 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
     - demultiplex: MiniBar
     - qc: [Nanofilt](https://github.com/wdecoster/nanofilt)  
     - error correction(polish): RACON
+18. Russell et al., Scientific Reports, 2019 [[link](https://www.nature.com/articles/s41598-018-23641-7)] 
 
 
