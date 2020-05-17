@@ -8,7 +8,7 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 * __demultiplexing__: Guppy, [Porechop](https://github.com/rrwick/Porechop)
 * __read trim__: [Seqtk](https://github.com/lh3/seqtk), Porechop
 * __map/align__: [Minimap2](https://github.com/lh3/minimap2), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml) (BWA-MEM), [GraphMap](https://github.com/isovic/graphmap), Blastn, [DIAMOND](https://github.com/bbuchfink/diamond), [Bowtie2](https://github.com/BenLangmead/bowtie2)
-* __consensus calling__: [zika-pipeline](https://github.com/zibraproject/zika-pipeline) (margin_cons.py), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml)?
+* __consensus calling__: [zika-pipeline](https://github.com/zibraproject/zika-pipeline) (margin_cons.py), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml)?, [medaka](https://github.com/nanoporetech/medaka)
 * __de novo assemble__: [Canu](https://github.com/marbl/canu), [Spades](http://cab.spbu.ru/software/spades/), [Shasta](https://github.com/chanzuckerberg/shasta)
 * __variant calling__: [Nanopolish](https://github.com/jts/nanopolish)
 * __qc__: [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), nanoplot/[nanopack](https://github.com/wdecoster/nanopack), [minion_qc](https://github.com/roblanf/minion_qc), Seqtk, [Qualimap](http://qualimap.bioinfo.cipf.es)
@@ -67,5 +67,7 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
     - qc: [Nanofilt](https://github.com/wdecoster/nanofilt)  
     - error correction(polish): RACON
 18. Russell et al., Scientific Reports, 2019 [[link](https://www.nature.com/articles/s41598-018-23641-7)] 
+19. __Tan et al., Viruses, 2019__ [[link](https://github.com/ShaoyuanTan/PRRSVproject)] 
+20. Oude et al., JoVE, 2020 [[link](https://www.jove.com/video/60906/validating-whole-genome-nanopore-sequencing-using-usutu-virus-as-an)] 
 
 
