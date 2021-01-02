@@ -1,3 +1,5 @@
+![](demo.png)
+
 __Basecalling__
 
 `guppy_basecall`

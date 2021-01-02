@@ -2,7 +2,7 @@
 
 This is a collection of literature relevent to [minION](http://nanoporetech.com/products/minion) sequencing, with a particular focus on viral genes. 
 
-## Summary 
+## General practices 
 
 * __basecalling__: Guppy, Albacore
 * __demultiplexing__: Guppy, [Porechop](https://github.com/rrwick/Porechop)
@@ -21,13 +21,16 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 
 * Basecalling tools: [Performance of neural network basecalling tools for Oxford Nanopore sequencing](https://github.com/rrwick/Basecalling-comparison) 
 * [_How to generate consensus sequences using nanopolish_](http://lab.loman.net/2018/12/21/how-to-generate-consensus-sequences-on-nanopore/) by Nicholas Loman
+* BAM/SAM filtering [[link](https://gist.github.com/davfre/8596159)]
+* Bacterial genome assembly [[link](https://github.com/rrwick/Trycycler/wiki/Guide-to-bacterial-genome-assembly)]
+* targeted sequencing: [[UNCALLED](https://github.com/skovaka/UNCALLED)], [[readfish](https://github.com/looselab/readfish)]
 
 ## Well-established Pipelines 
 
 * ZiBRA Project [[link](https://github.com/zibraproject/zika-pipeline/blob/master/docs/index.md)]
 * ARTIC Project [[link](http://artic.network/ebov/ebov-bioinformatics-sop.html)]
 * [IRMA](https://wonder.cdc.gov/amd/flu/irma/): assembly, variant calling, and phasing of highly variable RNA viruses (CDC)
-
+* NanoSPC [[link](https://nanospc.mmmoxford.uk)]
 
 ### Other reference 
 
