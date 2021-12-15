@@ -11,7 +11,7 @@ This is a collection of literature relevent to [minION](http://nanoporetech.com/
 * __consensus calling__: [zika-pipeline](https://github.com/zibraproject/zika-pipeline) (margin_cons.py), [bwa](http://bio-bwa.sourceforge.net/bwa.shtml)?, [medaka](https://github.com/nanoporetech/medaka)
 * __de novo assemble__: [Canu](https://github.com/marbl/canu), [Spades](http://cab.spbu.ru/software/spades/), [Shasta](https://github.com/chanzuckerberg/shasta)
 * __variant calling__: [Nanopolish](https://github.com/jts/nanopolish)
-* __qc__: [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), nanoplot/[nanopack](https://github.com/wdecoster/nanopack), [minion_qc](https://github.com/roblanf/minion_qc), Seqtk, [Qualimap](http://qualimap.bioinfo.cipf.es)
+* __qc__: [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), nanoplot/[nanopack](https://github.com/wdecoster/nanopack), [minion_qc](https://github.com/roblanf/minion_qc), Seqtk, [Qualimap](http://qualimap.bioinfo.cipf.es), [nanoq](https://github.com/esteinig/nanoq)
 * __polish__: [Nanopolish](https://github.com/jts/nanopolish), [Racon](https://github.com/isovic/racon)
 * __general data handling__: [Samtools](https://github.com/samtools/samtools), [BEDtools](https://github.com/arq5x/bedtools2), [Rsamtools](http://bioconductor.org/packages/release/bioc/html/Rsamtools.html), [Bamstats](https://github.com/guigolab/bamstats)
 * __others__: [Centrifuge](https://github.com/infphilo/centrifuge) (taxonomic classification), [Kraken](https://ccb.jhu.edu/software/kraken/) (taxonomic), [Kaiju](http://kaiju.binf.ku.dk)
